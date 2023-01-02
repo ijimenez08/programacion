@@ -1,0 +1,33 @@
+<meta charset="UTF-8">
+<h1> adivinacion</h1>
+
+<script>
+
+    function saltarLinea() 
+    {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) 
+    {
+        document.write(frase);
+        saltarLinea();
+    }
+
+    var numero = parseInt(prompt("ingrese un numero entre 0-10"));
+
+    var numrando= Math.round(Math.random()*10);
+
+    if (numrando == numero)
+    {
+        imprimir("adivinaste");
+
+    }
+    else
+    {
+        imprimir("el numero era :"+ numrando);
+
+    }
+</script>

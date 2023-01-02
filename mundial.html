@@ -1,0 +1,32 @@
+<meta charset="UTF-8">
+<h1> programa año mundial fifa</h1>
+<script>
+
+    function saltarLinea() 
+    {
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+    }
+
+    function imprimir(frase) 
+    {
+        document.write(frase);
+        saltarLinea();
+    }
+    
+    var anhomundi = 1930;
+    var limite =parseInt(prompt("Ingrese el año limite a calcular")); 
+
+
+    
+    while (anhomundi <= limite)
+    {
+        imprimir("Hubo mundial la Fifa en el año "+ anhomundi);
+        anhomundi= anhomundi+4
+        
+    }
+    imprimir("fin")
+    
+</script>
+
