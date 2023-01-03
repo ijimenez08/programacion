@@ -75,7 +75,7 @@ body
     
 }
   
-  .btn1, .btn2 
+  .boton1, .boton2 
   {
     border-radius: 1em;
     margin-right: 2.5em;
@@ -90,7 +90,7 @@ body
     transition: 0.2s;
         
   }
-  .btn1:hover,.btn2:hover
+  .boton1:hover,.boton2:hover
   {
     background: #10d3ec;
     box-shadow: 0 0 10px #10d3ec, 0 0 40px #10d3ec,0 0 80px #10d3ec;
