@@ -6,8 +6,18 @@ body
     background: #a8e2dee1;
     font-family: Arial, Helvetica, sans-serif;
 }
-  
-  header {
+  .titulo 
+  {
+    display: flex;
+    font-size: 30px;
+    text-align: center; 
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  header 
+  {
     display: flex;
     width: 70%;
     height: auto;
