@@ -118,7 +118,8 @@ body
     height: 500px;
   }
   
-  .contenedor-imagen img {
+  .contenedor-imagen img 
+  {
     display: flex;
     width: 80%;
     margin: auto;
