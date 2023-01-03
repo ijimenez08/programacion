@@ -43,7 +43,7 @@ body
     height: 500px;
   }
   
-  .text-area 
+  .texboxarea 
   {
     border-radius: 1em;
     margin-right: 2.5em;
@@ -60,7 +60,8 @@ body
     line-height: 125%;
   }
   
-  .text-area::placeholder {
+  .texboxarea::placeholder 
+  {
     color: rgb(0, 0, 0);
     font-size: 25px;
   }
