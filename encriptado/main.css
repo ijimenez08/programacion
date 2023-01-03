@@ -3,9 +3,9 @@ body
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background: #bddad8;
+    background: #a8e2dee1;
     font-family: Arial, Helvetica, sans-serif;
-  }
+}
   
   header {
     display: flex;
@@ -24,7 +24,7 @@ body
   header p {
     font-size: 2.5em;
     margin: 0 auto;
-    color: darkblue;
+    color: rgb(0, 0, 0);
     font-weight: bold;
   }
   
@@ -43,13 +43,16 @@ body
     height: 500px;
   }
   
-  .text-area {
+  .text-area 
+  {
+    border-radius: 1em;
+    margin-right: 2.5em;
     width: 80%;
     height: 50%;
     padding: 0.5em;
     border: none;
     font-size: 30px;
-    color: darkblue;
+    color: rgb(0, 0, 0);
     background-color: transparent;
     resize: none;
     outline: none;
@@ -58,44 +61,46 @@ body
   }
   
   .text-area::placeholder {
-    color: darkblue;
+    color: rgb(0, 0, 0);
     font-size: 25px;
   }
   
-   
   .botones
-   {
+{
     display: flex;
     flex-direction: row;
-    width: 70%;
+    width: 80%;
     margin: auto;
-  }
+    
+    
+}
   
-  .btn1, .btn2 {
-    display: inline;
-    width: 20em;
-    height: 3em;
-    background-color: darkblue;
-    border: none;
+  .btn1, .btn2 
+  {
     border-radius: 1em;
     margin-right: 2.5em;
-    cursor: pointer;
-    color: white;
-    font-family: 'PT Mono', monospace;
-    font-size: 25px;
-    font-weight: bold;
-    margin-bottom: 1em;
+    position: relative;
+    display: inline-flex;
+    padding: 15px 30px;
+    color: #080708;
+    letter-spacing: 2px;
+    font-size: 24px;
+    text-decoration: none;
+    overflow: hidden;
+    transition: 0.2s;
+        
   }
-  
-  .btn2
+  .btn1:hover,.btn2:hover
   {
-    background-color: #D8DFE8;
-    color: darkblue;
-    margin-right: 0;
-    border: 1px solid darkblue;;
+    background: #10d3ec;
+    box-shadow: 0 0 10px #10d3ec, 0 0 40px #10d3ec,0 0 80px #10d3ec;
+    transition-delay: 1s;
+
   }
+    
   
-  .tablero {
+  .salida 
+  {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -109,7 +114,7 @@ body
     margin-right: 4em;
     padding-right: 1.5em;
     border-radius: 2em;
-    height: 640px;
+    height: 500px;
   }
   
   .contenedor-imagen img {
@@ -133,7 +138,7 @@ body
   
   #resultado {
     display: flex;
-    color: darkblue;
+    color: rgb(0, 0, 0);
     width: 100%;
     font-size: 1.3em;
     padding: 0.5em;
@@ -151,26 +156,9 @@ body
     line-height: 150%;
   }
   
-  .boton_copiar {
-    display:inline;
-    width: 100%;
-    height: 4em;        
-    background-color: white;
-    border: 1px solid darkblue;;
-    border-radius: 1em;
-    font-size: 25px;
-    font-weight: bold;
-    cursor: pointer;
-    color: darkblue;
-    font-weight: bold;
-    margin: 0 auto;
-    margin-left: 10px;
-    margin-bottom: 3em; 
-    font-family: 'PT Mono', monospace;
-    
-  }
-  
-  footer {
+   
+  footer 
+  {
     background: darkblue;
     color: white;
     position: fixed;
@@ -187,19 +175,23 @@ body
     border-radius: 4em 4em 0px 0px; 
   }
   
-  /*Responsive design*/
-  @media only screen and (max-width: 770px) {
-    main {
+  /*Parametros que permite la pagina sea Responsive*/
+  @media only screen and (max-width: 770px) 
+  {
+    main 
+    {
       display: flex;
       flex-direction: column;
       width: 100%;
     }
   
-    header img {
+    header img 
+    {
       width: 10%;
     }
   
-    .encriptar-mensaje {
+    .encriptar-mensaje 
+    {
       margin: auto;
       margin-top: 1.5em;
       margin-bottom: 1.5em;
@@ -209,13 +201,15 @@ body
       padding-top: 1.5em;
     }
   
-    .botones {
+    .botones 
+    {
       margin: auto;
       margin-top: 30px;
       width: 100%;
     }
   
-    .btn1, .btn2 {
+    .btn1, .btn2 
+    {
       width: 25em;
       font-size: 15px;
     }
@@ -231,11 +225,8 @@ body
       font-size: 20px;
     }
   
-    .advertencia p {
-      font-size: 15px;
-    }
-  
-    .tablero {
+    .tablero 
+    {
       margin: 0 auto;
       font-size: 100%;
       width: 90%;
@@ -243,7 +234,8 @@ body
       margin-bottom: 70px;
     }
   
-    .tablero img {
+    .salida img 
+    {
       display: none;
       margin: none;
     }
@@ -266,7 +258,8 @@ body
     }
   }
   
-  @media only screen and (max-width: 400px) {
+  @media only screen and (max-width: 400px) 
+  {
   
     main {
       display: flex;
@@ -317,13 +310,15 @@ body
       width: 100%;
     }
   
-    .btn1, .btn2 {
+    .btn1, .btn2 
+    {
       width: 100%;
       align-items: center;
     }
   
   
-    .tablero {
+    .salida 
+    {
       margin: auto;
       margin-top: 20px;
       margin-bottom: 70px;
@@ -333,12 +328,14 @@ body
       
     }
   
-    .tablero img {
+    .salida img 
+    {
       display: none;
       margin: none;
     }
   
-    #resultado {
+    #resultado 
+    {
       height: auto;
       margin-left: 15px;
     }
