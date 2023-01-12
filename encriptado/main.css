@@ -71,12 +71,14 @@ body
     flex-direction: row;
     width: 80%;
     margin: auto;
+   
     
     
 }
   
   .btn1, .btn2 
   {
+    cursor: pointer;
     border-radius: 1em;
     margin-right: 2.5em;
     position: relative;
