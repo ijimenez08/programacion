@@ -6,8 +6,18 @@ body
     background: #a8e2dee1;
     font-family: Arial, Helvetica, sans-serif;
 }
-  
-  header {
+  .titulo 
+  {
+    display: flex;
+    font-size: 30px;
+    text-align: center; 
+    justify-content: center;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+
+  }
+  header 
+  {
     display: flex;
     width: 70%;
     height: auto;
@@ -17,18 +27,8 @@ body
      
   }
   
-  header img {
-    width: 3.5%;
-  }
-  
-  header p {
-    font-size: 2.5em;
-    margin: 0 auto;
-    color: rgb(0, 0, 0);
-    font-weight: bold;
-  }
-  
-  main {
+  main 
+  {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -36,14 +36,15 @@ body
     align-items: center;
   }
   
-  .encriptar-mensaje {
+  .encriptar-mensaje 
+  {
     display: flex;
     flex-direction: column;
     width: 80%;
     height: 500px;
   }
   
-  .text-area 
+  .texboxarea 
   {
     border-radius: 1em;
     margin-right: 2.5em;
@@ -60,7 +61,8 @@ body
     line-height: 125%;
   }
   
-  .text-area::placeholder {
+  .texboxarea::placeholder 
+  {
     color: rgb(0, 0, 0);
     font-size: 25px;
   }
@@ -76,7 +78,7 @@ body
     
 }
   
-  .btn1, .btn2 
+  .boton1, .boton2 
   {
     cursor: pointer;
     border-radius: 1em;
@@ -92,7 +94,7 @@ body
     transition: 0.2s;
         
   }
-  .btn1:hover,.btn2:hover
+  .boton1:hover,.boton2:hover
   {
     background: #10d3ec;
     box-shadow: 0 0 10px #10d3ec, 0 0 40px #10d3ec,0 0 80px #10d3ec;
@@ -100,7 +102,6 @@ body
 
   }
     
-  
   .salida 
   {
     display: flex;
@@ -119,26 +120,15 @@ body
     height: 500px;
   }
   
-  .contenedor-imagen img {
+  .contenedor-imagen img 
+  {
     display: flex;
     width: 80%;
     margin: auto;
   }
   
-  .text1{
-    padding: 1em;
-    font-size: 1.5em;
-    font-weight: bold;
-    margin-left: 15px; 
-  }
-  
-  .text2 {
-    padding: 1em;
-    font-size: 1em;
-    margin-left: 15px;
-  }
-  
-  #resultado {
+  #resultado 
+  {
     display: flex;
     color: rgb(0, 0, 0);
     width: 100%;
@@ -186,12 +176,7 @@ body
       flex-direction: column;
       width: 100%;
     }
-  
-    header img 
-    {
-      width: 10%;
-    }
-  
+    
     .encriptar-mensaje 
     {
       margin: auto;
@@ -210,7 +195,7 @@ body
       width: 100%;
     }
   
-    .btn1, .btn2 
+    .boton1, .boton2 
     {
       width: 25em;
       font-size: 15px;
@@ -223,7 +208,8 @@ body
       width: 100%;
     }
   
-    .text-area::placeholder {
+    .text-area::placeholder 
+    {
       font-size: 20px;
     }
   
@@ -236,26 +222,16 @@ body
       margin-bottom: 70px;
     }
   
-    .salida img 
+      
+    #resultado 
     {
-      display: none;
-      margin: none;
-    }
-  
-    #resultado {
       height: auto;
       margin-left: 20px;
       width: 90%;
     }
-  
-    .boton_copiar {
-      width: 100%;
-      height: 3em;        
-      font-size: 15px;
-      margin-bottom: 1.5em;
-    }
-    
-    footer {
+
+    footer 
+    {
       font-size: 0.8em; 
     }
   }
@@ -263,7 +239,8 @@ body
   @media only screen and (max-width: 400px) 
   {
   
-    main {
+    main 
+    {
       display: flex;
       flex-direction: column;
       width: 100%;
@@ -282,29 +259,27 @@ body
       width: 7%;
     }
   
-    .encriptar-mensaje {
+    .encriptar-mensaje 
+    {
       margin: auto;
     }
   
   
-    .text-area {
+    .text-area 
+    {
       font-size: 1.2em;    
       margin: 0;
       margin-top: 10%;
       width: 100%;
     }
   
-    .text-area::placeholder {
+    .text-area::placeholder
+    {
       font-size: 1em;
     }
   
-    .encriptar-mensaje p {
-      margin-top: 2em;
-      padding-top: 1em;
-      font-size: 0.7em;
-    }
-  
-    .botones {
+    .botones 
+    {
       display: flex;
       flex-direction: column;
       margin: auto;
@@ -312,7 +287,7 @@ body
       width: 100%;
     }
   
-    .btn1, .btn2 
+    .boton1, .boton2 
     {
       width: 100%;
       align-items: center;
@@ -329,13 +304,7 @@ body
       font-size: 70%;
       
     }
-  
-    .salida img 
-    {
-      display: none;
-      margin: none;
-    }
-  
+    
     #resultado 
     {
       height: auto;
